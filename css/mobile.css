@@ -191,7 +191,7 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: flex-start; 
+    align-items: center; 
 }
 
 .right {
@@ -212,4 +212,17 @@ display: none;
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor derecho */
+}
+.parrafo-objetivo{
+    color: white;
+    font-size: 1.3rem;
+}
+.titulo-objetivo h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }

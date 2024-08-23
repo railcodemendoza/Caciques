@@ -111,7 +111,7 @@ position: relative;
 top: -10px;
 }
 .navbar-links li a:hover{
-    color: white;
+    color: var(--color-yellow-primary);
 
 }
 #navbar:target .open {

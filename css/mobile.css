@@ -1,14 +1,48 @@
-.hero{
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-image: url('/assets/images/CCQS052.JPG');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+}
 
+.title {
+    z-index: 2;
+    color: white;
+}
+
+.title h1 {
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+.title h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Overlay oscuro */
+    z-index: 1;
 }
 
 
 
-/* Navbar Section */
+.menu-icon, .home, .navbar-links {
+    z-index: 101;  /* Mantiene los elementos de la navbar visibles */
+}
+
 #navbar {
     display: flex;
     position: fixed;
@@ -52,7 +86,7 @@
 .navbar-links li a {
 text-decoration: none;
 color: rgb(185, 180, 180);
-font-family: "roboto", sans-serif;
+font-family: "DM Sans", sans-serif;
 font-size: 0.9rem;
 font-weight: bold;
 text-transform: uppercase;
@@ -90,3 +124,18 @@ display: block;
 .close {
 display: none;
 }
+.nav.scrolled {
+    background-color: #cf2222;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); /* Ajusta la sombra si es necesario */
+}
+.title{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.subrayado{
+    background-color:  var(--color-yellow-primary);
+}raya

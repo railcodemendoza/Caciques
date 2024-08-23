@@ -157,11 +157,14 @@ display: none;
 
 /* Objetivos */
 .objetivo{
-   /*  background-image: url('/assets/images/red.avif'); */
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 50px 0; */
+    overflow: hidden;
+    height: auto;
+    min-height: 100vh;
+    
    
 }
 .objetivo::before {
@@ -171,23 +174,24 @@ display: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);  /* Overlay oscuro */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 .container-objetivo {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 100vh; /* Asegura que la sección tenga al menos la altura del viewport */
+    min-height: 100vh; 
 }
-
 .left {
+   background-image: url('/assets/images/red.avif'); 
     width: 100%;
+    min-height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido del contenedor izquierdo */
-    align-items: flex-start; /* Alinea a la izquierda */
+    justify-content: center; 
+    align-items: flex-start; 
 }
 
 .right {

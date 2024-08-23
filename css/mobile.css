@@ -57,10 +57,9 @@
 }
 
 .home img{
-    width: 60px;
-    height: 100%;
-    margin-right: 10px;
-
+    width: 67px;
+    height: 57px;
+    margin: 10px 10px;
 }
 .navbar-links{
     display: none;
@@ -90,7 +89,7 @@ font-family: "DM Sans", sans-serif;
 font-size: 0.9rem;
 font-weight: bold;
 text-transform: uppercase;
-opacity: 0.5;
+/* opacity: 0.5; */
 letter-spacing: 1px;
 }
 
@@ -128,6 +127,7 @@ display: none;
     background-color: #cf2222;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); /* Ajusta la sombra si es necesario */
 }
+
 .title{
     color: white;
     font-size: 1rem;
@@ -138,4 +138,19 @@ display: none;
 }
 .subrayado{
     background-color:  var(--color-yellow-primary);
-}raya
+}
+.button {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--color-yellow-primary); 
+    color: rgb(8, 8, 8); 
+    border: none; 
+    border-radius: 12px; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    outline: none; 
+    box-shadow: none; 
+}

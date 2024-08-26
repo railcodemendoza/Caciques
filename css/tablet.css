@@ -61,3 +61,31 @@
 .right img {
     height: auto; /* Mantiene las proporciones de la imagen */
 }
+/* Caciques */
+.caciques {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container-caciques {
+    display: flex;
+    align-items: center;
+   
+}
+
+.left-caciques {
+    flex: 1;
+}
+
+.right-caciques {
+    flex: 1;
+    
+}
+
+.left-caciques img {
+    max-width: 100%;
+    height: auto;
+   /*  min-height: 100vh; */
+    display: block;
+}

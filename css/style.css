@@ -17,5 +17,8 @@ body, html, a, ul{
 }
 :root{
     --color-yellow-primary: #F7931E;
-    
+    --color-black--primary: #1D1D1B;
+}
+body{
+    background-color: var(--color-black--primary);
 }

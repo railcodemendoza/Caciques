@@ -86,7 +86,7 @@
 text-decoration: none;
 color: rgb(185, 180, 180);
 font-family: "DM Sans", sans-serif;
-font-size: 0.9rem;
+font-size: 1.4rem;
 font-weight: bold;
 text-transform: uppercase;
 /* opacity: 0.5; */
@@ -184,7 +184,7 @@ display: none;
     min-height: 100vh; 
 }
 .left {
-   background-image: url('/assets/images/red.avif'); 
+    background-image: url('/assets/images/red.avif'); 
     width: 100%;
     min-height: 100vh;
     padding: 20px;
@@ -210,7 +210,7 @@ display: none;
 
 .right img {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor derecho */
 }
 .parrafo-objetivo{
@@ -218,11 +218,57 @@ display: none;
     font-size: 1.3rem;
 }
 .titulo-objetivo h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 30px;
     color: white;
     font-family: 'Oswald', sans-serif;
+}
+/* Caciques */
+.caciques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-caciques {
+    display: flex;
+    align-items: center;
+}
+
+.left-caciques,
+.right-caciques {
+    flex: 1;
+}
+
+.left-caciques img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.titulo-caciques h2{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.titulo-caciques p{
+    color: white;
+    font-size: 1rem;
+}
+
+.card-cacique{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }

@@ -268,7 +268,7 @@ display: none;
 
     .left-caciques {
         order: 2; /* Hace que el contenedor con la imagen aparezca después */
-        margin-top: 20px; /* Añade espacio entre las secciones */
+        
     }
 }
 
@@ -298,7 +298,8 @@ display: none;
 }
 
 
-.card-cacique {
+.card-cacique {    
+    width: 339px;
     display: flex;
     justify-content: center;
     align-items: center;

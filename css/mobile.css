@@ -277,6 +277,25 @@ display: none;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas si es necesario */
     justify-content: center;
 }
+.titulo-caciques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-caciques h2{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.titulo-caciques p{
+    color: white;
+    font-size: 1.3rem;
+}
+
 
 .card-cacique {
     display: flex;
@@ -304,7 +323,12 @@ display: none;
     color: var(--color-yellow-primary);
     font-family: "Oswald", sans-serif;
 }
-
+.card-cacique-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card-cacique-body p {
     color: white;
 }
@@ -319,4 +343,8 @@ display: none;
     font-size: 0.7rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+.subrayado-caciques{
+    background-color:  var(--color-yellow-primary);
+    width: 300px;
 }

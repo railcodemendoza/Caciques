@@ -62,6 +62,16 @@
     height: auto; /* Mantiene las proporciones de la imagen */
 }
 /* Caciques */
+.caciques {
+    display: flex;
+   
+}
+
+.container-caciques {
+    display: flex;
+    align-items: center;
+   
+}
 
 .left-caciques {
     flex: 1;
@@ -75,7 +85,7 @@
 .left-caciques img {
     max-width: 100%;
 
-   min-height: 150vh; 
+   min-height: 100vh; 
     display: block;
 }
  

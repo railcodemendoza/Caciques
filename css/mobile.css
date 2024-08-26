@@ -227,56 +227,75 @@ display: none;
     font-family: 'Oswald', sans-serif;
 }
 /* Caciques */
+/* General Layout */
 .caciques {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .container-caciques {
     display: flex;
-    align-items: center;
+    flex-direction: row; /* Layout horizontal en pantallas grandes */
+    width: 100%;
 }
 
-.left-caciques,
+.left-caciques {
+    flex: 1;
+}
+
 .right-caciques {
     flex: 1;
 }
 
 .left-caciques img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover; /* Ajusta la imagen sin deformar */
     display: block;
 }
-.titulo-caciques h2{
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-.titulo-caciques p{
-    color: white;
-    font-size: 1rem;
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .container-caciques {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    }
+
+    .right-caciques {
+        order: 1; /* Hace que el contenedor con el texto aparezca primero */
+    }
+
+    .left-caciques {
+        order: 2; /* Hace que el contenedor con la imagen aparezca después */
+        margin-top: 20px; /* Añade espacio entre las secciones */
+    }
 }
 
-.card-cacique{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-        margin: 20px;    
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-        border: 2px solid var(--color-yellow-primary);
+.container-card-caciques {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas si es necesario */
+    justify-content: center;
 }
-.card-cacique-header figure img{
+
+.card-cacique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-yellow-primary);
+    transition: transform 0.3s ease;
+}
+
+.card-cacique-header figure img {
     width: 60px;
 }
-.card-cacique-header{
+
+.card-cacique-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,11 +304,12 @@ display: none;
     color: var(--color-yellow-primary);
     font-family: "Oswald", sans-serif;
 }
-.card-cacique-body p{
-    color: white;
 
+.card-cacique-body p {
+    color: white;
 }
-.button-card{
+
+.button-card {
     background-color: var(--color-yellow-primary);
     color: white;
     padding: 8px 10px;
@@ -299,10 +319,4 @@ display: none;
     font-size: 0.7rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-.card-cacique-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }

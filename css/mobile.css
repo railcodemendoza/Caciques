@@ -282,6 +282,7 @@ display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 29px auto;
 }
 .titulo-caciques h2{
     font-size: 1.8rem;

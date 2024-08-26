@@ -51,41 +51,32 @@
 }
 
 .left {
-    width: 50%; /* El bloque de la izquierda ocupa el 50% del ancho */
+    width: 50%; 
 }
 
 .right {
-    width: 50%; /* El bloque de la derecha también ocupa el 50% del ancho */
+    width: 50%; 
 }
 
 .right img {
-    height: auto; /* Mantiene las proporciones de la imagen */
+    height: auto; 
 }
 /* Caciques */
-.caciques {
-    display: flex;
-   
-}
-
 .container-caciques {
-    display: flex;
-    align-items: center;
-   
-}
-
-.left-caciques {
-    flex: 1;
+    flex-direction: row; 
+    flex-wrap: wrap; 
 }
 
 .right-caciques {
+    order: 2; 
     flex: 1;
-    
 }
 
-.left-caciques img {
-    max-width: 100%;
-
-   min-height: 100vh; 
-    display: block;
+.left-caciques {
+    order: 1; 
+    flex: 1; 
+   
 }
- 
+.left-caciques img{
+    min-height: 156vh;
+}

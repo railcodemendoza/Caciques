@@ -227,7 +227,7 @@ display: none;
     font-family: 'Oswald', sans-serif;
 }
 /* Caciques */
-/* General Layout */
+
 .caciques {
     display: flex;
     justify-content: center;
@@ -237,7 +237,7 @@ display: none;
 
 .container-caciques {
     display: flex;
-    flex-direction: row; /* Layout horizontal en pantallas grandes */
+    flex-direction: row; 
     width: 100%;
 }
 
@@ -252,29 +252,28 @@ display: none;
 .left-caciques img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ajusta la imagen sin deformar */
-    display: block;
+    object-fit: cover; 
 }
 
 /* Mobile Layout */
 @media (max-width: 768px) {
     .container-caciques {
-        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        flex-direction: column; 
     }
 
     .right-caciques {
-        order: 1; /* Hace que el contenedor con el texto aparezca primero */
+        order: 1; 
     }
 
     .left-caciques {
-        order: 2; /* Hace que el contenedor con la imagen aparezca después */
+        order: 2; 
         
     }
 }
 
 .container-card-caciques {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas si es necesario */
+    flex-wrap: wrap; /
     justify-content: center;
 }
 .titulo-caciques{
@@ -356,6 +355,7 @@ display: none;
     padding: 20px;
     background-color: #C1272D;
     height: 40vh;
+    top: -5px;
 }
 
 .container-metricas {
@@ -381,4 +381,12 @@ display: none;
 .texto {
     font-size: 1rem;
     color: white; 
+}
+/* PILARES */
+.pilares{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;  
+    height: auto;
+    min-height: 100vh;
 }

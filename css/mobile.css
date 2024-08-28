@@ -413,20 +413,25 @@ display: none;
   }
   
   .card-pilares-header img {
-    width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+    width: 80%; /* Ajusta la imagen al ancho de la tarjeta */
     height: auto;
     border-radius: 10px;
   }
   
   .card-pilares-header h3 {
     position: absolute;
-    top: 50%;  /* Posiciona el texto en el centro de la imagen */
-    left: 50%; /* Centra horizontalmente el texto */
-    transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
     font-size: 2rem;
     color: white;
     font-family: 'Work Sans', sans-serif;
-    z-index: 10; /* Asegura que el texto esté sobre la imagen */
-    background-color: rgba(0, 0, 0, 0.959); /* Fondo semitransparente para mejor legibilidad */
-    padding: 10px 20
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.964);
+    padding: 10px 20;
+    letter-spacing: 2px;
+  }
+  .card-pilares:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
   }

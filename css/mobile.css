@@ -138,6 +138,7 @@ display: none;
 }
 .subrayado{
     background-color:  var(--color-yellow-primary);
+    color: black
 }
 .button {
     font-family: 'Oswald', sans-serif;
@@ -344,10 +345,12 @@ display: none;
     font-size: 0.7rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px 0;
 }
 .subrayado-caciques{
     background-color:  var(--color-yellow-primary);
     width: 300px;
+    color: black;
 }
 
 /* Metricas */

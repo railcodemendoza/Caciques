@@ -435,3 +435,14 @@ display: none;
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
+/* Parallax*/
+/* Parallax */
+.parallax {
+    height: 100vh;
+    background-image: url('/assets/images/prallax.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que el efecto parallax funcione */
+}
+

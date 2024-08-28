@@ -273,7 +273,7 @@ display: none;
 
 .container-card-caciques {
     display: flex;
-    flex-wrap: wrap; /
+    flex-wrap: wrap; 
     justify-content: center;
 }
 .titulo-caciques{

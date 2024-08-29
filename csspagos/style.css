@@ -1,3 +1,5 @@
 @import url(../csspagos/phone.css);
 @import url('../csspagos/tablet.css') screen and (min-width: 768px);
 @import url('../csspagos/pc.css') screen and (min-width: 1024px);
+
+@import url('https://fonts.cdnfonts.com/css/sweet-sans-pro');

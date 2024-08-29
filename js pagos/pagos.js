@@ -15,3 +15,11 @@ document.querySelectorAll('.botonseleccionmonto').forEach(button => {
         button.classList.add('selected');
     };
 });
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) { // Ajusta este valor según lo necesites
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

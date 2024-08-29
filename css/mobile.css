@@ -350,7 +350,7 @@ display: none;
 }
 .subrayado-caciques{
     background-color:  var(--color-yellow-primary);
-    width: 300px;
+    width: 317px;
     color: black;
 }
 
@@ -358,8 +358,9 @@ display: none;
 .metricas {
     padding: 20px;
     background-color: #C1272D;
-    height: 40vh;
+    height: 55vh;
     top: -5px;
+    position: relative;
 }
 
 .container-metricas {
@@ -430,7 +431,7 @@ display: none;
     font-size: 2rem;
     color: white;
     font-family: 'Sweet Sans Pro', sans-serif;
-    z-index: 10;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.964);
     padding: 10px 20;
     letter-spacing: 1px;

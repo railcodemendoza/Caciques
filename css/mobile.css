@@ -367,6 +367,8 @@ display: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .uno, .dos, .tres, .cuatro {
     padding: 20px;
@@ -448,7 +450,7 @@ display: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 /* video*/
 .video{

@@ -81,7 +81,7 @@ position: relative;
 top: -10px;
 }
 .navbar-links li a:hover{
-  color: var(--color-yellow-primary);
+  color: #F7931E;
 
 }
 #navbar:target .open {

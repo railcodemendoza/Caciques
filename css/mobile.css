@@ -648,7 +648,7 @@ body{
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assetspollo/img/imghome.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/card1.JPG);
     height: 954px;
     overflow: hidden;
     background-size: cover;
@@ -792,8 +792,10 @@ display: none;
             }
                     .logoubi{
                         position: absolute;
-                        margin-left: 60px;
-                        margin-top: 5px;
+                        margin-left: 50px;
+                        margin-top: 10px;
+                        width: 25px;
+                        height: 35px;
                         color: rgb(193, 39, 45);
                     }
                     .ubicaciones{
@@ -801,7 +803,7 @@ display: none;
                         font-family: 'Oswald', sans-serif;
                         font-size: 32px;
                         text-align: left;
-                        margin-left: 105px;
+                        margin-left: 85px;
                         margin-bottom: 0;
                     }
                             .ubicacionesaclaracion{
@@ -809,7 +811,7 @@ display: none;
                                 font-family: "DM Sans", sans-serif;
                                 font-size: 10px;
                                 text-align: left;
-                                margin-left: 105px;
+                                margin-left: 85px;
                                 margin-bottom: 50px;
                                 margin-top: 0;
                             }
@@ -818,7 +820,7 @@ display: none;
                         font-family: 'Oswald', sans-serif;
                         font-size: 32px;
                         text-align: left;
-                        margin-left: 105px;
+                        margin-left: 85px;
                         margin-bottom: 50px;
                     }
 

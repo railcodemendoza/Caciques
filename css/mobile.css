@@ -362,12 +362,12 @@ display: none;
 .metricas {
     padding: 20px;
     background-color: #C1272D;
-    height: 55vh;
+    height: 70vh;
     top: -5px;
     position: relative;
     text-align: center;
     align-items: center;
-}
+  }
 
 .container-metricas {
     display: grid;
@@ -421,31 +421,67 @@ display: none;
   .card-pilares-header {
     position: relative;
     width: 100%;
-  }
+}
 
-  .card-pilares-header img {
+.card-pilares-header img {
     width: 80%;
     height: auto;
     border-radius: 10px;
-  }
+    transition: filter 0.3s ease; /* Transición para escala de grises */
+}
 
-  .card-pilares-header h3 {
-    position: absolute;
+
+.card-pilares-header img.grayscale {
+    filter: grayscale(100%); /* Efecto de escala de grises */
+}
+
+.card-pilares-header h3 {
+    position: absolute; /* Para centrar el h3 sobre la imagen */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centrado exacto */
     font-size: 2rem;
     color: white;
     font-family: 'Sweet Sans Pro', sans-serif;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.964);
-    padding: 10px 20;
+    z-index: 2; /* Asegura que el h3 esté encima de la imagen */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
     letter-spacing: 1px;
-  }
+    transition: opacity 0.3s ease; /* Transición suave para ocultar el h3 */
+}
   .card-pilares:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
+
+
+  .hidden-text {
+    display: none; /* Oculto inicialmente */
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar el texto */
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    padding: 15px;
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+.card-pilares-header.show-text .hidden-text {
+    display: block; /* Mostrar el texto cuando se hace clic */
+}
+
+.card-pilares-header.show-text h3 {
+    opacity: 0; /* Ocultar el h3 cuando el texto aparezca */
+}
+
+
 /* Parallax*/
 /* Parallax */
 .parallax {
@@ -474,10 +510,10 @@ display: none;
 .footer {
     text-align: center;
     width: 100%;
-    height: 700px;
+    height: 593px;
     overflow: hidden;
     position: relative;
-    background-color:rgb(29, 29, 27);
+    background-color: rgb(29, 29, 27);
     }
 
             .footer h5{
@@ -505,11 +541,11 @@ display: none;
     justify-content: center;
 }
 
-.footer img{
-    margin-top: 50px;
-    width: 350px;
-    height: 180px;
-    }
+.footer img {
+    width: 278px;
+    height: 137px;
+    margin-top: 40px;
+}
 
 .footer__addr h2 {
     margin-top: 1em;
@@ -600,7 +636,7 @@ color: #ffffff;
     }
 
     .legal {
-        padding-top: 100px;
+        padding-top: 58px;
         color: #999;
     }
 
@@ -790,14 +826,14 @@ display: none;
             margin-top: 50px;
             font-size: 35px;
             }
-                    .logoubi{
-                        position: absolute;
-                        margin-left: 50px;
-                        margin-top: 10px;
-                        width: 25px;
-                        height: 35px;
-                        color: rgb(193, 39, 45);
-                    }
+                .logoubi {
+                    position: absolute;
+                    margin-left: 50px;
+                    margin-top: 8px;
+                    width: 25px;
+                    height: 35px;
+                    color: rgb(193, 39, 45);
+                }
                     .ubicaciones{
                         color: rgb(247, 147, 30);
                         font-family: 'Oswald', sans-serif;
@@ -1013,16 +1049,19 @@ display: none;
                 .formindicartiempo{
                     padding-top: 50px;
                 }
-                        .labels{
-                            color: rgb(255, 255, 255);
-                                margin: 30px;
-                                    font-family: "DM Sans", sans-serif;
-                                    font-optical-sizing: auto;
-                                    font-weight: 300;
-                                    font-style: normal;
-                                    margin-bottom: 80px;
-                                    margin-top: 50px;
-                        }
+                    .labels {
+                        color: rgb(255, 255, 255);
+                        margin: 30px;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        font-family: "DM Sans", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
+                        font-style: normal;
+                        margin-bottom: 93px;
+                        margin-top: 50px;
+                        font-size: 18px;
+                    }
                         .botones{
                             margin-top: 25px;
                         }
@@ -1074,11 +1113,11 @@ display: none;
                             flex-direction: column;
                             width: 45%;
                         }
-    .datospersonales {
-        height: 500px;
-        background-color: rgb(247, 147, 30);
-        padding: 0;
-    }
+                .datospersonales {
+                    height: 526px;
+                    background-color: rgb(247, 147, 30);
+                    padding: 0;
+                }
 
             .h1datospers {
                 width: 240px;
@@ -1127,13 +1166,13 @@ display: none;
                                 justify-content: center;
                                 align-items: center;
                             }
-                            .botonquierosumarme{
-                              font-family: 'Sweet Sans Pro', sans-serif;
+                            .botonquierosumarme {
+                                font-family: 'Sweet Sans Pro', sans-serif;
                                 font-optical-sizing: auto;
                                 font-weight: 400;
                                 font-style: normal;
                                 font-size: 15px;
-                                margin: 0;
+                                margin: 7px;
                                 background-color: rgb(163, 16, 16);
                                 color: #ffffff;
                                 border: 0;
@@ -1152,16 +1191,16 @@ display: none;
         background-position: center;
         background-repeat: no-repeat;
         height: 500px;
-
     }
-    .porquecolaborar h1{
+
+    .porquecolaborar h1 {
         margin-top: 40px;
         font-family: 'Sweet Sans Pro', sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
         font-size: 25px;
-
+        width: 349px;
     }
     .porquecolaborar p{
         font-family: "DM Sans", sans-serif;

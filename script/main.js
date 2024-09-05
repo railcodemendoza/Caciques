@@ -71,3 +71,16 @@ if (window.scrollY > 50) { // Ajusta este valor según lo necesites
   navbar.classList.remove('scrolled');
 }
 });
+
+
+
+document.querySelectorAll('.clickable-image').forEach(image => {
+    image.addEventListener('click', function() {
+        // Alternar clase para aplicar filtro de escala de grises
+        this.classList.toggle('grayscale');
+
+        // Mostrar o esconder el texto asociado
+        const cardHeader = this.closest('.card-pilares-header');
+        cardHeader.classList.toggle('show-text');
+    });
+});

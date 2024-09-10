@@ -378,19 +378,27 @@ display: none;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    font-family: 'Sweet Sans Pro', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
+.cinco{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
 
+}
 .numero {
     font-size: 2rem;
     font-weight: bold;
     transition: all 1s ease;
     color: #0E0E0D;
+    font-family: 'Oswald', sans-serif;
 }
 
 .texto {
     font-size: 1rem;
     color: white;
+    font-family: 'Oswald', sans-serif;
 }
 /* PILARES */
 .pilares{
@@ -807,13 +815,13 @@ display: none;
                         100% { transform: translateX(0); }
                     }
 
-    .dondeestamos{
-        width: 100%;
-        height: 550px;
-        overflow: hidden;
-        position: relative;
-        background-color:rgba(29, 29, 27);
-        }
+                    .dondeestamos {
+                        width: 100%;
+                        height: 537px;
+                        overflow: hidden;
+                        position: relative;
+                        background-color: rgba(29, 29, 27);
+                    }
         .dondeestamos h1{
             color: white;
             font-family: 'Oswald', sans-serif;
@@ -858,12 +866,12 @@ display: none;
                         margin-bottom: 50px;
                     }
 
-    .hitos{
-        width: 100%;
-        height: 380px;
-        overflow: hidden;
-        background-color:rgb(29, 29, 27);
-        }
+                    .hitos {
+                        width: 100%;
+                        height: 310px;
+                        overflow: hidden;
+                        background-color: rgb(29, 29, 27);
+                    }
 
         .hitos h1{
             color: white;
@@ -875,9 +883,9 @@ display: none;
             margin-top: 50px;
             font-size: 35px;
         }
-        
 
-        
+
+
         .lineadeltiempo {
             display: flex;
             overflow-x: scroll;
@@ -886,7 +894,7 @@ display: none;
             margin-left: 40px;
             margin-right: 40px;
         }
-        
+
         .slide {
             flex: 0 0 100%;
             scroll-snap-align: center;
@@ -895,7 +903,7 @@ display: none;
             align-items: center;
             padding: 20px;
         }
-        
+
         .contenidohitos {
             border-left: 2px solid rgb(247, 147, 30);
             color: white;
@@ -903,7 +911,7 @@ display: none;
             position: relative;
             font-family: 'Sweet Sans Pro', sans-serif;
         }
-        
+
         .contenidohitos:before {
             content: '';
             width: 10px;
@@ -917,7 +925,7 @@ display: none;
 
         .valores {
             width: 100%;
-            height: 950px;
+            height: 659px;
             overflow: hidden;
             position: relative;
             background-color: rgb(29, 29, 27);
@@ -979,13 +987,13 @@ display: none;
             text-align: center; /* Centra el texto si es multilinea */
         }
         
-            .ayudanos{
-                margin-top: 120px;
-                text-align: center;
-                color: white;
-                font-family: 'Oswald', sans-serif;
-                font-size: 20px;
-            }
+        .ayudanos {
+            margin-top: 0px;
+            text-align: center;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+        }
             .involucrate{
                 background-color: rgb(247, 147, 30);
                 font-family: 'Oswald', sans-serif;
@@ -999,7 +1007,7 @@ display: none;
                 margin-top: 50px;
             }
 
-        
+
 
 
 /* P  A  G  O  S */
@@ -1063,7 +1071,7 @@ display: none;
                 font-weight: 400;
                 font-style: normal;
             }
-                
+
 
                 .form{
                     height: 380px;
@@ -1235,14 +1243,3 @@ display: none;
         margin-top: 90px;
         margin: 40px;
     }
-
-
-
-
-
-
-
-
-
-
-

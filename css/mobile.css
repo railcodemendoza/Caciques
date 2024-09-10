@@ -401,7 +401,7 @@ display: none;
     font-family: 'Oswald', sans-serif;
 }
 /* PILARES */
-.pilares{
+/* .pilares{
     display: flex;
     justify-content: center;
     padding: 50px 0;
@@ -435,27 +435,27 @@ display: none;
     width: 80%;
     height: auto;
     border-radius: 10px;
-    transition: filter 0.3s ease; /* Transición para escala de grises */
+    transition: filter 0.3s ease;
 }
 
 
 .card-pilares-header img.grayscale {
-    filter: grayscale(100%); /* Efecto de escala de grises */
+    filter: grayscale(100%);
 }
 
 .card-pilares-header h3 {
-    position: absolute; /* Para centrar el h3 sobre la imagen */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrado exacto */
+    transform: translate(-50%, -50%); 
     font-size: 2rem;
     color: white;
     font-family: 'Sweet Sans Pro', sans-serif;
-    z-index: 2; /* Asegura que el h3 esté encima de la imagen */
+    z-index: 2; 
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     letter-spacing: 1px;
-    transition: opacity 0.3s ease; /* Transición suave para ocultar el h3 */
+    transition: opacity 0.3s ease; 
 }
   .card-pilares:hover{
     transform: scale(1.1);
@@ -464,15 +464,15 @@ display: none;
 
 
   .hidden-text {
-    display: none; /* Oculto inicialmente */
+    display: none; 
     position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar el texto */
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     font-size: 1.5rem;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 15px;
     border-radius: 8px;
     width: 70%;
@@ -482,12 +482,103 @@ display: none;
 
 
 .card-pilares-header.show-text .hidden-text {
-    display: block; /* Mostrar el texto cuando se hace clic */
+    display: block; 
 }
 
 .card-pilares-header.show-text h3 {
-    opacity: 0; /* Ocultar el h3 cuando el texto aparezca */
+    opacity: 0; 
+} */
+
+
+
+
+
+
+.pilares {
+    width: 100%;
+    height: 371px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(29, 29, 27);
 }
+
+.pilares h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.carouselpilares {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselpilares-inner {
+    display: flex;
+    width: auto;
+    height: 100%;
+    animation: slide 21s infinite;
+}
+
+.carouselpilares-item {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 28px;
+    position: relative;
+  }
+
+.carouselpilares-item img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área disponible */
+    border-radius: 20px;
+}
+.carouselpilares-item h2{
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto si es multilinea */
+    font-size: 30px;
+}
+
+.labelpilares {
+    position: absolute;
+    bottom: 80px; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%);
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.623); /* Fondo semitransparente */
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto si es multilinea */
+}
+
+
+
+.nuestrospilarestitle{
+    background-color: var(--color-yellow-primary);
+    font-weight: 500;
+    font-family: 'oswald', sans-serif;
+    padding: 2px;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+
 
 
 /* Parallax*/

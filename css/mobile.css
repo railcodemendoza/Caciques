@@ -401,7 +401,7 @@ display: none;
     font-family: 'Oswald', sans-serif;
 }
 /* PILARES */
-.pilares{
+/* .pilares{
     display: flex;
     justify-content: center;
     padding: 50px 0;
@@ -435,27 +435,27 @@ display: none;
     width: 80%;
     height: auto;
     border-radius: 10px;
-    transition: filter 0.3s ease; /* Transición para escala de grises */
+    transition: filter 0.3s ease;
 }
 
 
 .card-pilares-header img.grayscale {
-    filter: grayscale(100%); /* Efecto de escala de grises */
+    filter: grayscale(100%);
 }
 
 .card-pilares-header h3 {
-    position: absolute; /* Para centrar el h3 sobre la imagen */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrado exacto */
+    transform: translate(-50%, -50%);
     font-size: 2rem;
     color: white;
     font-family: 'Sweet Sans Pro', sans-serif;
-    z-index: 2; /* Asegura que el h3 esté encima de la imagen */
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     letter-spacing: 1px;
-    transition: opacity 0.3s ease; /* Transición suave para ocultar el h3 */
+    transition: opacity 0.3s ease;
 }
   .card-pilares:hover{
     transform: scale(1.1);
@@ -464,15 +464,15 @@ display: none;
 
 
   .hidden-text {
-    display: none; /* Oculto inicialmente */
+    display: none;
     position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar el texto */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.5rem;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
     border-radius: 8px;
     width: 70%;
@@ -482,12 +482,62 @@ display: none;
 
 
 .card-pilares-header.show-text .hidden-text {
-    display: block; /* Mostrar el texto cuando se hace clic */
+    display: block;
 }
 
 .card-pilares-header.show-text h3 {
-    opacity: 0; /* Ocultar el h3 cuando el texto aparezca */
+    opacity: 0;
 }
+ */
+ .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pilares {
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.card-pilares img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-pilares h3 {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
+
+
+}
+
+.hidden-text {
+  padding-top: 10px;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 
 
 /* Parallax*/

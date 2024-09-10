@@ -497,32 +497,11 @@ display: none;
 
 
 .card-pilares-header.show-text .hidden-text {
-<<<<<<< HEAD
     display: block;
 }
 
 .card-pilares-header.show-text h3 {
     opacity: 0;
-=======
-    display: block;
-}
-
-.card-pilares-header.show-text h3 {
-    opacity: 0;
-} */
-
-
-
-
-
-
-.pilares {
-    width: 100%;
-    height: 371px;
-    overflow: hidden;
-    position: relative;
-    background-color: rgb(29, 29, 27);
->>>>>>> df6cfffc71381993f6fe7060f8f9618fea66b58b
 }
  */
  .swiper-container {

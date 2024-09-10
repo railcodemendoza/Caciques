@@ -73,14 +73,16 @@ if (window.scrollY > 50) { // Ajusta este valor según lo necesites
 });
 
 
-
-document.querySelectorAll('.clickable-image').forEach(image => {
-    image.addEventListener('click', function() {
-        // Alternar clase para aplicar filtro de escala de grises
-        this.classList.toggle('grayscale');
+document.querySelectorAll('.clickable-image, .clickable-title').forEach(element => {
+    element.addEventListener('click', function() {
+        // Alternar clase para aplicar filtro de escala de grises en imagen y título
+        const cardHeader = this.closest('.card-pilares-header');
+        
+        // Alterna la clase 'grayscale' para la imagen y el título
+        cardHeader.querySelector('.clickable-image').classList.toggle('grayscale');
+        cardHeader.querySelector('.clickable-title').classList.toggle('grayscale');
 
         // Mostrar o esconder el texto asociado
-        const cardHeader = this.closest('.card-pilares-header');
         cardHeader.classList.toggle('show-text');
     });
 });

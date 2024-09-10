@@ -205,3 +205,19 @@
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
+
+
+
+
+
+
+document.querySelectorAll('.clickable-image').forEach(image => {
+    image.addEventListener('click', function() {
+        // Alternar clase para aplicar filtro de escala de grises
+        this.classList.toggle('grayscale');
+
+        // Mostrar o esconder el texto asociado
+        const cardHeader = this.closest('.card-pilares-header');
+        cardHeader.classList.toggle('show-text');
+    });
+});

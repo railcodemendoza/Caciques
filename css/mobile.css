@@ -507,7 +507,8 @@ display: none;
   display: flex;
   overflow-x: scroll; /* Permite desplazamiento horizontal */
   scroll-snap-type: x mandatory; /* Establece el snapping */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento táctil en móviles */
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
 }
 
 .carousel-items {

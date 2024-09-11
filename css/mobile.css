@@ -514,7 +514,7 @@ display: none;
 }
 
 .card-pilares {
-  min-width: 40%;
+  min-width: 50%;
   border: 2px solid var(--color-yellow-primary);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -532,9 +532,6 @@ display: none;
   height: auto;
   border-radius: 8px;
   position: relative;
-}
-.card-pilares-virgen img{
-
 }
 .card-pilares h3 {
   font-size: 1.5rem;

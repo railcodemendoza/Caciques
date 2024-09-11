@@ -499,7 +499,7 @@ display: none;
 .title-pilares {
   text-align: center;
   margin-bottom: 20px;
-  z-index: 10;
+  z-index: 1;
   position: relative;
 }
 

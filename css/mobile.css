@@ -521,12 +521,12 @@ display: none;
   text-align: center;
   padding: 20px;
   scroll-snap-align: center;
-  height: 500px;
+  height: 513px;
 }
 
 .card-pilares img {
   width: 129%;
-  top: -159px;
+  top: -140px;
   width: 122%;
   left: -6%;
   height: auto;
@@ -556,10 +556,16 @@ display: none;
 }
 
 #game{
+  width: 120%;
+  top: 7%;
   position: relative;
-  left: 50%;
+  left: 18%;
 }
-
+#guinda img{
+  left: 63%;
+  position: relative;
+  top: -130%;
+}
 
 
 

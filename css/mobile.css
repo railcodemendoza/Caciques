@@ -494,6 +494,7 @@ font-family: 'Oswald', sans-serif;
 .container-pilares {
   overflow: hidden;
   padding: 20px;
+  margin-top: 66px;
 }
 
 .title-pilares {
@@ -518,7 +519,8 @@ font-family: 'Oswald', sans-serif;
   display: flex;
   gap: 10px; /* Espacio entre los items en móvil */
   padding: 0 10px; /* Padding para que el primer y último item no queden pegados */
-  width: 100%; /* Se asegura de que las tarjetas estén contenidas */
+  width: 100%;
+  margin-top: 90px;
 }
 
 .card-pilares {
@@ -529,16 +531,17 @@ font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 20px;
   scroll-snap-align: center; /* Centra el scroll en la tarjeta */
-  background: #fff; /* Fondo blanco para el contenido */
+  height: 64%;
+
 }
 
-.card-pilares img {
-  width: 100%; /* Ajusta al 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+/* .card-pilares img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 15px; /* Espacio debajo de la imagen */
+  margin-bottom: 15px;
 }
-
+ */
 .card-pilares h3 {
   font-size: 1.5rem;
   color: var(--color-yellow-primary);
@@ -548,21 +551,28 @@ font-family: 'Oswald', sans-serif;
 
 .hidden-text {
   padding-top: 10px;
-  font-size: 1rem;
-  color: #333;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .card-pilares-header {
   margin: 10px auto;
-}
-
-/* Ajustes específicos para cada figura (si necesitas ajustar las imágenes individualmente) */
-#virgen img, #game img, #guinda img {
-  width: 100%; /* Ajusta el tamaño para evitar desplazamientos */
-  height: auto;
+  position: relative;
 }
 
 
+
+#unopng img {
+  width: 181px;
+  top: -56%;
+  left: 63%;
+  position: absolute;
+}
+#virgen{
+  position: absolute;
+  top: -76%;
+  left: 45%;
+}
 /* Parallax*/
 /* Parallax */
 .parallax {

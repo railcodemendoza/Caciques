@@ -575,13 +575,13 @@ font-family: 'Oswald', sans-serif;
 }
 #game{
   position: absolute;
-  right: -50%;
+  right: -21%;
   /* width: 445px; */
-  top: 166%;
-
+  top: 59%;
 }
+
 #game img{
-  width: 400px;
+  width: 274px;
 }
 /* Parallax*/
 /* Parallax */

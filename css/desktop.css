@@ -1,3 +1,12 @@
+
+
+
+/* N O S O T R O S */
+
+
+
+
+
 header {
     height: 900px;
 }
@@ -148,3 +157,89 @@ header {
 .contenidohitos {
     height: 200px;
 }
+
+
+
+
+
+/* P  A  G  O  S */
+
+.headh1 {
+    width: 621px;
+}
+
+
+.form {
+    height: 800px;
+    background-color: rgb( 29, 29, 27);
+    text-align: center;
+}
+
+
+.labels {
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 93px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 151px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.botonseleccion {
+    margin: 52px;
+    font-size: 24px;
+}
+
+.botonseleccionmonto {
+    margin: 42px 42px 24px 42px;
+    font-size: 24px;
+}
+
+.inputsdp {
+    width: 493px;
+    font-size: 18px;
+}
+
+.datospersonales {
+    height: 651px;
+}
+
+.h1datospers {
+    width: 245px;
+    font-size: 47px;
+    margin-left: 100px;
+}
+
+
+.labelsdp {
+    font-size: 24px;
+}
+
+
+
+
+.porquecolaborar h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+.porquecolaborar p {
+    font-size: 24px;
+    margin: 140px;
+}
+
+
+

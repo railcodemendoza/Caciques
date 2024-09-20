@@ -521,6 +521,7 @@ font-family: 'Oswald', sans-serif;
   padding: 0 10px; /* Padding para que el primer y último item no queden pegados */
   width: 100%;
   margin-top: 90px;
+  height: 512px;
 }
 
 .card-pilares {
@@ -575,13 +576,17 @@ font-family: 'Oswald', sans-serif;
 }
 #game{
   position: absolute;
-  right: -21%;
+  right: -34%;
   /* width: 445px; */
-  top: 59%;
+  top: 53%;
 }
 
 #game img{
   width: 274px;
+}
+#guinda{
+  position: absolute;
+  top: 15%;
 }
 /* Parallax*/
 /* Parallax */

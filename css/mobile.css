@@ -362,7 +362,7 @@ display: none;
 .metricas {
   padding: 20px;
   background-color: #C1272D;
-  height: 70vh;
+  height: 40vh;
   top: -5px;
   position: relative;
   text-align: center;
@@ -556,10 +556,12 @@ font-family: 'Oswald', sans-serif;
   color: white;
 }
 
+
 .card-pilares-header {
   margin: 10px auto;
   position: relative;
 }
+
 
 
 

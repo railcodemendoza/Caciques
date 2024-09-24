@@ -499,13 +499,16 @@ display: none;
 .title-pilares {
   text-align: center;
   margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 .carousel-static {
   display: flex;
   overflow-x: scroll; /* Permite desplazamiento horizontal */
   scroll-snap-type: x mandatory; /* Establece el snapping */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento táctil en móviles */
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
 }
 
 .carousel-items {
@@ -514,23 +517,28 @@ display: none;
 }
 
 .card-pilares {
-  min-width: 90%; /* Ocupa la mayor parte del ancho en móvil */
-
-  border-radius: 8px;
+  min-width: 50%;
+  border: 2px solid var(--color-yellow-primary);
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 20px;
-  scroll-snap-align: center; /* Hace que el scroll se detenga en el centro del elemento */
+  scroll-snap-align: center;
+  height: 513px;
+  position: static;
 }
 
 .card-pilares img {
-  width: 100%;
+  width: 129%;
+  top: -140px;
+  width: 122%;
+  left: -6%;
   height: auto;
   border-radius: 8px;
+  position: relative;
 }
-
 .card-pilares h3 {
-  font-size: 20px; /* Tamaño de texto adaptado para móvil */
+  font-size: 1.5rem;
   color: var(--color-yellow-primary);
   margin-top: 10px;
   font-family: 'Oswald', sans-serif;
@@ -539,15 +547,29 @@ display: none;
 
 .hidden-text {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
 
 }
+.card-pilares-header{
+  margin: 10px auto;
+}
+#virgen{
+  position: relative;
+  left: 48%;
+}
 
-
-
-
-
+#game{
+  width: 120%;
+  top: 7%;
+  position: relative;
+  left: 18%;
+}
+#guinda img{
+  left: 63%;
+  position: relative;
+  top: -140%;
+}
 
 
 

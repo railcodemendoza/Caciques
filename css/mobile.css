@@ -568,13 +568,14 @@ font-family: 'Oswald', sans-serif;
 #unopng img {
   width: 181px;
   top: -56%;
-  left: 75%;
+  left: 63%;
   position: absolute;
 }
 #virgen{
   position: absolute;
-  top: -68%;
-  left: 63%;
+  top: -54%;
+  left: 49%;
+
 }
 #game{
   position: absolute;
@@ -1059,6 +1060,7 @@ display: none;
               justify-content: center;
               align-items: center;
               flex-direction: column;
+              padding: 15px;
           }
                   .listavalores p{
                       margin-top: 50px;

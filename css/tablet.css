@@ -97,3 +97,15 @@
   flex: 0 0 50%;
 
 }
+
+#virgen {
+  position: absolute;
+  top: -59%;
+  left: 46%;
+}
+#game {
+  position: absolute;
+  right: -40%;
+  
+  top: 64%;
+}

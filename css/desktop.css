@@ -17,5 +17,8 @@
 
 }
 .card-pilares {
-  flex: 0 0 40%;
+  flex: 0 0 33%;
+}
+.titulo-caciques {
+   margin: 39px auto;
 }

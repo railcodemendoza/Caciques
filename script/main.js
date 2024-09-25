@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       });
   }, {
-      threshold: 0.5 
+      threshold: 0.5
   });
 
   counters.forEach(counter => {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function () {
   const navbar = document.getElementById('navbar');
-  if (window.scrollY > 50) { 
+  if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
   } else {
       navbar.classList.remove('scrolled');
@@ -73,16 +73,32 @@ if (window.scrollY > 50) { // Ajusta este valor según lo necesites
 });
 
 
-document.querySelectorAll('.clickable-image, .clickable-title').forEach(element => {
-    element.addEventListener('click', function() {
-        // Alternar clase para aplicar filtro de escala de grises en imagen y título
-        const cardHeader = this.closest('.card-pilares-header');
-        
-        // Alterna la clase 'grayscale' para la imagen y el título
-        cardHeader.querySelector('.clickable-image').classList.toggle('grayscale');
-        cardHeader.querySelector('.clickable-title').classList.toggle('grayscale');
+const carousel = document.querySelector('.carousel-static');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-        // Mostrar o esconder el texto asociado
-        cardHeader.classList.toggle('show-text');
-    });
+carousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carousel.classList.add('active');
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener('mouseleave', () => {
+    isDown = false;
+    carousel.classList.remove('active');
+});
+
+carousel.addEventListener('mouseup', () => {
+    isDown = false;
+    carousel.classList.remove('active');
+});
+
+carousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Detiene la función si no se está haciendo click
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 3; // El número multiplica la cantidad de desplazamiento
+    carousel.scrollLeft = scrollLeft - walk;
 });

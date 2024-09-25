@@ -388,7 +388,7 @@ font-family: 'Oswald', sans-serif;
 
 }
 .numero {
-  font-size: 2rem;
+  font-size: 2.9rem;
   font-weight: bold;
   transition: all 1s ease;
   color: #0E0E0D;
@@ -532,7 +532,7 @@ font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 20px;
   scroll-snap-align: center; /* Centra el scroll en la tarjeta */
-  height: 92%;
+  height: 99%;
 
 }
 
@@ -568,13 +568,13 @@ font-family: 'Oswald', sans-serif;
 #unopng img {
   width: 181px;
   top: -56%;
-  left: 63%;
+  left: 75%;
   position: absolute;
 }
 #virgen{
   position: absolute;
-  top: -76%;
-  left: 45%;
+  top: -68%;
+  left: 63%;
 }
 #game{
   position: absolute;
@@ -584,7 +584,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 #game img{
-  width: 274px;
+  width: 253px;
 }
 #guinda{
   position: absolute;
@@ -1054,6 +1054,11 @@ display: none;
               background-size: 80%;
               background-position: center;
               background-repeat: no-repeat;
+              height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
           }
                   .listavalores p{
                       margin-top: 50px;

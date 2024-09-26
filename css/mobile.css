@@ -1,4 +1,142 @@
+/* General styles */
 .hero {
+  position: relative;
+  height: 100vh; /* Adjust the height based on your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 10; /* Ensure the navbar stays above the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire header */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Posiciona el texto sobre el video */
+
+.title h4{
+  margin: 10px auto;
+}
+/* Estilos del botón */
+.button {
+  background-color: #D51641; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a40f30; /* Efecto hover en el botón */
+}
+
+
+/*
+
+.title {
+  position: relative;
+  z-index: 12;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35%;
+
+}
+
+.title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  z-index: 10   ;
+}
+ */
+/* .title h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #D51641;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #ff4761;
+}
+ */
+
+/* Aplica el overlay oscuro solo al video */
+.background-video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.33);  /* Overlay oscuro */
+  z-index: 2; /* Asegúrate de que el overlay esté encima del video pero debajo del texto */
+}
+
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire header */
+  z-index: 1; /* El video está debajo del overlay */
+}
+
+.title {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 39%;
+}
+
+/* .hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -6,12 +144,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('/assets/images/CCQS052.JPG');
+   background-image: url('/assets/images/CCQS052.JPG');
   background-size: cover;
   background-position: center;
-}
+} */
 
-.title {
+/* .title {
   z-index: 2;
   color: white;
 }
@@ -26,16 +164,16 @@
   font-size: 1.5rem;
   margin: 10px 0;
   font-family: 'Sweet Sans Pro', sans-serif;
-}
+} */
 
-.hero::before {
+.video-background::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);  /* Overlay oscuro */
+  background: rgba(0, 0, 0, 0.33);  /* Overlay oscuro */
   z-index: 1;
 }
 
@@ -49,7 +187,7 @@
   display: flex;
   position: fixed;
   flex-wrap: wrap;
-  width: 100%;
+  width: 108%;
   justify-content: space-between;
   z-index: 10;
   transition: background-color 0.3s ease;
@@ -61,7 +199,7 @@
 .home img{
   width: 67px;
   height: 57px;
-  margin: 10px 10px;
+  margin: -9px 10px;
 }
 .navbar-links{
   display: none;
@@ -141,8 +279,8 @@ display: none;
 .subrayado{
   background-color: var(--color-yellow-primary);
   font-weight: 500;
-  font-family: 'Oswald', sans-serif;
-  padding: 2px;
+  font-family: 'Sweet Sans Pro', sans-serif;
+    padding: 2px;
   display: inline-block;
 }
 
@@ -191,7 +329,7 @@ display: none;
   min-height: 100vh;
 }
 .left {
-  background-image: url('/assets/images/red.avif');
+  background-image: url('/assets/images/CCQS002.JPG');
   width: 100%;
   min-height: 100vh;
   padding: 20px;
@@ -199,7 +337,9 @@ display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
+
 
 .right {
   width: 100%;
@@ -362,7 +502,7 @@ display: none;
 .metricas {
   padding: 20px;
   background-color: #C1272D;
-  height: 40vh;
+  height: 47vh;
   top: -5px;
   position: relative;
   text-align: center;

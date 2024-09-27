@@ -293,3 +293,7 @@ header {
 .texto {
   font-size: 1.3rem;
 }
+.left-caciques img {
+  min-height: 200vh;
+}
+

@@ -513,6 +513,8 @@ display: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  top: 22%;
+  position: relative;
 }
 .uno, .dos, .tres, .cuatro .cinco{
   padding: 20px;
@@ -830,9 +832,15 @@ height: 59vh;
   font-family: 'Sweet Sans Pro', sans-serif;
 
 }
+.container-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 
+}
 .container-video iframe{
-  width: 1080px;
+  width: 480px;
   height: 500px;
 }
 /* Footer */

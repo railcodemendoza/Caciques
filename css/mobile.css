@@ -191,7 +191,7 @@
   justify-content: space-between;
   z-index: 10;
   transition: background-color 0.3s ease;
-  height: 75px;
+  height: 93px;
   position: fixed !important;
   top: 0;
 }
@@ -518,7 +518,7 @@ display: none;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Sweet Sans Pro', sans-serif;
 }
 .cinco{
 display: flex;
@@ -538,7 +538,7 @@ font-family: 'Oswald', sans-serif;
 .texto {
   font-size: 1rem;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Sweet Sans Pro', sans-serif;
 }
 /* PILARES */
 /* .pilares{
@@ -719,11 +719,13 @@ font-family: 'Oswald', sans-serif;
 .glass-content h3 {
   font-size: 34px;
     margin-bottom: 30px;
+    font-family: 'Sweet Sans Pro', sans-serif;
 }
 .glass-content-espiritualidad h3{
   font-size: 34px;
   margin: 0 -19px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  font-family: 'Sweet Sans Pro', sans-serif;
 }
 
 .glass-content p,
@@ -731,6 +733,7 @@ font-family: 'Oswald', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Efecto hover opcional para el zoom en la imagen */
@@ -747,7 +750,7 @@ font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   color: var(--color-yellow-primary);
   margin-top: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Sweet Sans Pro', sans-serif;
 }
 
 .hidden-text {

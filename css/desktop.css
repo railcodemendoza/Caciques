@@ -47,7 +47,7 @@ header {
 .subrayado {
     background-color: var(--color-yellow-primary);
     font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Sweet Sans Pro', sans-serif;
     padding: 2px;
     display: inline-block;
     font-size: 40px;

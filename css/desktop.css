@@ -21,7 +21,7 @@ header {
 .subrayado {
     background-color: var(--color-yellow-primary);
     font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Sweet Sans Pro', sans-serif;
     padding: 2px;
     display: inline-block;
     font-size: 40px;
@@ -128,7 +128,7 @@ header {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     text-align: left;
-    margin-left: 1.2%;
+    margin-left: 1%;
     margin-top: 58px;
     position: absolute;
 }
@@ -280,3 +280,28 @@ header {
     margin-top: 50px;
 }
 
+.home img{
+  margin: -12px 69px;
+}
+@media screen and (min-width: 1440px) {
+  .carousel-static{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+}
+.right-caciques{
+  margin: 139px auto;
+}
+.texto {
+  font-size: 1.3rem;
+}
+/* .left-caciques img {
+  min-height: 180vh;
+} */
+
+.container-video iframe {
+  width: 1080px;
+}

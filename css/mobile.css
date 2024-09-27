@@ -1,4 +1,143 @@
+/* General styles */
 .hero {
+  position: relative;
+  height: 100vh; /* Adjust the height based on your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 10; /* Ensure the navbar stays above the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire header */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Posiciona el texto sobre el video */
+
+.title h4{
+  margin: 10px auto;
+  font-size: 2rem;
+}
+/* Estilos del botón */
+.button {
+  background-color: #D51641; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a40f30; /* Efecto hover en el botón */
+}
+
+
+/*
+
+.title {
+  position: relative;
+  z-index: 12;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35%;
+
+}
+
+.title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  z-index: 10   ;
+}
+ */
+/* .title h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #D51641;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #ff4761;
+}
+ */
+
+/* Aplica el overlay oscuro solo al video */
+.background-video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.33);  /* Overlay oscuro */
+  z-index: 2; /* Asegúrate de que el overlay esté encima del video pero debajo del texto */
+}
+
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire header */
+  z-index: 1; /* El video está debajo del overlay */
+}
+
+.title {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 39%;
+}
+
+/* .hero {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -6,12 +145,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/assets/images/CCQS052.JPG');
+     background-image: url('/assets/images/CCQS052.JPG');
     background-size: cover;
     background-position: center;
-}
+} */
 
-.title {
+/* .title {
     z-index: 2;
     color: white;
 }
@@ -26,16 +165,16 @@
     font-size: 1.5rem;
     margin: 10px 0;
     font-family: 'Sweet Sans Pro', sans-serif;
-}
+} */
 
-.hero::before {
+.video-background::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);  /* Overlay oscuro */
+    background: rgba(0, 0, 0, 0.33);  /* Overlay oscuro */
     z-index: 1;
 }
 
@@ -49,19 +188,19 @@
     display: flex;
     position: fixed;
     flex-wrap: wrap;
-    width: 100%;
+    width: 108%;
     justify-content: space-between;
     z-index: 10;
     transition: background-color 0.3s ease;
-    height: 75px;
+    height: 93px;
     position: fixed !important;
     top: 0;
 }
 
 .home img{
-    width: 67px;
+    width: 114px;
     height: 57px;
-    margin: 10px 10px;
+    margin: -15px 37px;
 }
 .navbar-links{
     display: none;
@@ -141,8 +280,8 @@ display: none;
 .subrayado{
     background-color: var(--color-yellow-primary);
     font-weight: 500;
-    font-family: 'Oswald', sans-serif;
-    padding: 2px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+      padding: 2px;
     display: inline-block;
 }
 
@@ -191,7 +330,7 @@ display: none;
     min-height: 100vh;
 }
 .left {
-    background-image: url('/assets/images/red.avif');
+    background-image: url('/assets/images/CCQS002.JPG');
     width: 100%;
     min-height: 100vh;
     padding: 20px;
@@ -199,7 +338,9 @@ display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  background-size: cover;
 }
+
 
 .right {
     width: 100%;
@@ -362,7 +503,7 @@ display: none;
 .metricas {
     padding: 20px;
     background-color: #C1272D;
-    height: 70vh;
+    height: 77vh;
     top: -5px;
     position: relative;
     text-align: center;
@@ -373,12 +514,14 @@ display: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  top: 22%;
+  position: relative;
 }
 .uno, .dos, .tres, .cuatro .cinco{
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Sweet Sans Pro', sans-serif;
 }
 .cinco{
   display: flex;
@@ -398,7 +541,7 @@ display: none;
 .texto {
     font-size: 1rem;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Sweet Sans Pro', sans-serif;
 }
 /* PILARES */
 /* .pilares{
@@ -503,37 +646,113 @@ display: none;
 
 .carousel-static {
   display: flex;
-  overflow-x: scroll; /* Permite desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Establece el snapping */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento táctil en móviles */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.carousel-static::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-items {
   display: flex;
-  gap: 10px; /* Espacio entre los items en móvil */
+  gap: 10px;
+  padding: 0 10px;
+
+  height: 512px;
 }
 
-.card-pilares {
-  min-width: 90%; /* Ocupa la mayor parte del ancho en móvil */
 
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-  scroll-snap-align: center; /* Hace que el scroll se detenga en el centro del elemento */
+/* Estilo general de la card */
+.card {
+  position: relative;
+  width: 355px;
+  height: 482px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinear el contenido al inicio, arriba */
 }
 
-.card-pilares img {
+Imagen de fondo que se verá nítida */
+.background-img {
+  position: absolute;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
+.rugby{
+  background-image: url('/assets/images/rugby.JPG');
+
+}
+.espiritualidad{
+  background-image: url(/assets/images/virgen.JPG);
+}
+.educacion{
+  background-image: url(/assets/images/RNI-Films-IMG-EB16B689-A7C9-404F-82AB-13202BA6813D\ \(2\).JPG );
+}
+.trabajo{
+  background-image: url(/assets/images/educacion.JPG);
+}
+.glass-content,
+.glass-content-espiritualidad{
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(6, 6, 6);
+  width: 90%;
+  height: 90%;
+  margin-top: 20px; /* Ajusta la posición vertical */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título y texto dentro de la card */
+.glass-content h3 {
+  font-size: 34px;
+    margin-bottom: 30px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+}
+.glass-content-espiritualidad h3{
+  font-size: 34px;
+  margin: 0 -19px;
+  margin-bottom: 30px;
+  font-family: 'Sweet Sans Pro', sans-serif;
+}
+
+.glass-content p,
+.glass-content-espiritualidad p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Efecto hover opcional para el zoom en la imagen */
+.card:hover .background-img {
+  transform: scale(1.05); /* Zoom suave al hacer hover */
+  transition: transform 0.5s ease;
+}
+
+
+
+
 
 .card-pilares h3 {
   font-size: 20px; /* Tamaño de texto adaptado para móvil */
   color: var(--color-yellow-primary);
   margin-top: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Sweet Sans Pro', sans-serif;
 
 }
 
@@ -543,10 +762,47 @@ display: none;
   color: white;
 
 }
+/* Estilo general de la card */
+.card-pilaresS {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: space-between; /* Distribuye el texto arriba y la imagen abajo */
+  background-color: #fff;
+}
 
+/* Estilo del encabezado de la card (texto arriba) */
+.card-pilares-headerR {
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
 
+.card-pilares-header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
+.hidden-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
 
+/* Estilo de la imagen abajo */
+#virgen {
+  width: 100%;
+  margin: 0;
+}
+
+#virgen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 
@@ -564,13 +820,24 @@ display: none;
 /* video*/
 .video{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 .container-video p{
     font-size: 2rem;
     color: white;
     font-family: 'Sweet Sans Pro', sans-serif;
 
+}
+.container-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+}
+.container-video iframe{
+  width: 480px;
+  height: 500px;
 }
 /* Footer */
 
@@ -611,7 +878,7 @@ display: none;
 }
 
 .footer img {
-    width: 278px;
+  
     height: 137px;
     margin-top: 40px;
 }

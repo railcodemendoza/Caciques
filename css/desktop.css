@@ -293,9 +293,9 @@ header {
 .texto {
   font-size: 1.3rem;
 }
-.left-caciques img {
-  min-height: 200vh;
-}
+/* .left-caciques img {
+  min-height: 180vh;
+} */
 
 .container-video iframe {
   width: 1080px;

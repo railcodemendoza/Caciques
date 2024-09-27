@@ -1,29 +1,3 @@
-.container-card-caciques {
-    display: flex;;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 80px auto;
-}
-.titulo-objetivo h3{
-    font-size: 3rem;
-}
-.parrafo-objetivo {
-    font-size: 2.3rem;
-    padding: 30px;
-}
-.card-pilares{
-  flex: 0 0 30%;
-
-}
-.card-pilares {
-  flex: 0 0 33%;
-}
-.titulo-caciques {
-   margin: 39px auto;
-}
-
-
 
 
 
@@ -144,7 +118,17 @@ header {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     text-align: left;
-    margin-left: 25px;
+    margin-left: 1%;
+    margin-top: 58px;
+    position: absolute;
+  }
+
+.ubicacionesaclaracion2 {
+    color: rgb(255, 255, 255);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 1.2%;
     margin-top: 58px;
     position: absolute;
 }
@@ -154,6 +138,30 @@ header {
 }
 
 .logoubi {
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 13px;
+    width: 29px;
+    height: 41px;
+    color: rgb(193, 39, 45);
+  }
+.logoubi2 {
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 13px;
+    width: 29px;
+    height: 41px;
+    color: rgb(193, 39, 45);
+  }
+.logoubi3 {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 13px;
+    width: 29px;
+    height: 41px;
+    color: rgb(193, 39, 45);
+}
+.logoubi4 {
     position: absolute;
     margin-left: -18px;
     margin-top: 13px;
@@ -253,9 +261,6 @@ header {
     font-size: 24px;
 }
 
-.porquecolaborar {
-    height: 560px;
-  }
 
 .porquecolaborar h1 {
     font-size: 42px;

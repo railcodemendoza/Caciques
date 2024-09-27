@@ -644,45 +644,93 @@ font-family: 'Oswald', sans-serif;
 
 .carousel-static {
   display: flex;
-  overflow-x: auto; /* Permite desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Establece el snapping */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento táctil en móviles */
-  padding-bottom: 20px; /* Espacio para evitar corte de contenido */
-  scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  scrollbar-width: none;
 }
 
 .carousel-static::-webkit-scrollbar {
-  display: none; /* Oculta la barra de scroll en Chrome, Safari y Opera */
+  display: none;
 }
 
 .carousel-items {
   display: flex;
-  gap: 10px; /* Espacio entre los items en móvil */
-  padding: 0 10px; /* Padding para que el primer y último item no queden pegados */
-  width: 100%;
-  margin-top: 90px;
+  gap: 10px;
+  padding: 0 10px;
+
   height: 512px;
 }
 
-.card-pilares {
-  flex: 0 0 80%; /* Ajuste de tamaño para que las tarjetas no se expandan */
-  border: 2px solid var(--color-yellow-primary);
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-  scroll-snap-align: center; /* Centra el scroll en la tarjeta */
-  height: 99%;
 
+/* Estilo general de la card */
+.card {
+  position: relative;
+  width: 355px;
+  height: 482px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinear el contenido al inicio, arriba */
 }
 
-/* .card-pilares img {
+/* Imagen de fondo que se verá nítida */
+.background-img {
+  position: absolute;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  height: 100%;
+  background-image: url('/assets/images/rugby.JPG'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
- */
+
+/* Contenedor de efecto glass que se superpone a la imagen */
+.glass-content,
+.glass-content-espiritualidad{
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté sobre la imagen */
+  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(1px); /* Efecto de desenfoque */
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(6, 6, 6);
+  width: 90%;
+  height: 90%;
+  margin-top: 20px; /* Ajusta la posición vertical */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título y texto dentro de la card */
+.glass-content h3 {
+  font-size: 34px;
+    margin-bottom: 30px;
+}
+.glass-content-espiritualidad h3{
+  font-size: 34px;
+  margin-bottom: 30px;
+  margin: 0 -19px;
+}
+
+.glass-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Efecto hover opcional para el zoom en la imagen */
+.card:hover .background-img {
+  transform: scale(1.05); /* Zoom suave al hacer hover */
+  transition: transform 0.5s ease;
+}
+
+
+
+
+
 .card-pilares h3 {
   font-size: 1.5rem;
   color: var(--color-yellow-primary);
@@ -701,36 +749,51 @@ font-family: 'Oswald', sans-serif;
   margin: 10px auto;
   position: relative;
 }
-
-
-
-
-#unopng img {
-  width: 181px;
-  top: -56%;
-  left: 63%;
-  position: absolute;
-}
-#virgen{
-  position: absolute;
-  top: -54%;
-  left: 49%;
-
-}
-#game{
-  position: absolute;
-  right: -34%;
-  /* width: 445px; */
-  top: 53%;
+/* Estilo general de la card */
+.card-pilaresS {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: space-between; /* Distribuye el texto arriba y la imagen abajo */
+  background-color: #fff;
 }
 
-#game img{
-  width: 253px;
+/* Estilo del encabezado de la card (texto arriba) */
+.card-pilares-headerR {
+  padding: 20px;
+  text-align: center;
+  color: #333;
 }
-#guinda{
-  position: absolute;
-  top: 15%;
+
+.card-pilares-header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
+.hidden-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Estilo de la imagen abajo */
+#virgen {
+  width: 100%;
+  margin: 0;
+}
+
+#virgen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
 /* Parallax*/
 /* Parallax */
 .parallax {

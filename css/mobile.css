@@ -199,7 +199,7 @@
 .home img{
   width: 67px;
   height: 57px;
-  margin: -9px 10px;
+  margin: -15px 37px;
 }
 .navbar-links{
   display: none;
@@ -722,11 +722,12 @@ font-family: 'Oswald', sans-serif;
 }
 .glass-content-espiritualidad h3{
   font-size: 34px;
-  margin-bottom: 30px;
   margin: 0 -19px;
+  margin-bottom: 30px
 }
 
-.glass-content p {
+.glass-content p,
+.glass-content-espiritualidad p {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
@@ -818,13 +819,18 @@ height: 59vh;
 /* video*/
 .video{
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 .container-video p{
   font-size: 2rem;
   color: white;
   font-family: 'Sweet Sans Pro', sans-serif;
 
+}
+
+.container-video iframe{
+  width: 1080px;
+  height: 500px;
 }
 /* Footer */
 

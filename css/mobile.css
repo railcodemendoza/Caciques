@@ -200,7 +200,8 @@
 .home img{
     width: 114px;
     height: 57px;
-    margin: -15px 37px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 .navbar-links{
     display: none;

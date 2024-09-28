@@ -1,14 +1,15 @@
 .menu-icon{
     display: none;
 }
-.navbar-links{
+.navbar-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     list-style: none;
-    margin: 1px 76px;
+    margin: 1px 80px;
     color: #fff;
+    margin-right: 124px;
 }/* Objetivo*/
 /* .objetivo {
     display: flex;

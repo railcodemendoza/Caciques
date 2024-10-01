@@ -17,27 +17,29 @@
 </head>
 <body>
     <header>
-        <nav id="navbar" class="nav">
+        <section class="navcontainer">
+            <nav id="navbar" class="nav">
             <div class="home">
-                <a href="#" class="h"><img src="/assets/images/logoblancomza.png" alt="lodo de caciques"></a>
+                <a href="/index.html" class="h"><img src="/assets/images/logo.png" alt="lodo de caciques"></a>
             </div>
             <div class="menu-icon">
                 <a href="#navbar" class="open"><i class="fa-solid fa-bars" style="color: rgba(243, 233, 233, 0.659)"></i></a>
                 <a href="#" class="close"><i class="fa-solid fa-xmark" style="color: rgba(243, 233, 233, 0.659)"></i></a>
             </div>
             <ul class="navbar-links">
-                <li><a href="/nosotros.html">Nosotros</a></li>
-                <li><a href="#involucrate">Involucrate</a></li>
-                <li><a href="#pilares">Pilares</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                <li><a href="/index.html#involucrate">Involucrate</a></li>
+                <li><a href="/index.html#pilares">Pilares</a></li>
+                <li><a href="/index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
+        </section>
         <h1 class="headh1">
             QUIERO <span class="highlight">SER PARTE</span>
             DE CACIQUES
         </h1>
     </header>
-    <section class="form">
+    <section class="form" id="donar">
         <form action="" class="formindicartiempo">
             <label for="" class="labels"> Con que frecuencia querés donar</label>
             <div id="button-group" class="botones">
@@ -60,25 +62,40 @@
         </div>
     </form>
     </section>
-    <section class="datospersonales">
-        <form action="">
-            <h1 class="h1datospers">Datos Personales</h1>
-            <div class="centrardatos">
-            <div class="inputylabelssdatosp">
-            <label for="nombre" class="labelsdp">Nombre/s:</label><br>
-            <input type="text" id="nombre" name="nombre" class="inputsdp" required><br><br>
-            <label for="nombre" class="labelsdp">Apellido/s:</label><br>
-            <input type="text" id="nombre" name="nombre" class="inputsdp" required><br><br>
-            <label for="nombre" class="labelsdp">Email:</label><br>
-            <input type="email" id="email" name="email" class="inputsdp" required><br><br>
-            <label for="nombre" class="labelsdp">Fecha de nacimiento:</label><br>
-            <input type="date" id="date" name="date" class="inputsdp" required><br><br>
-            <label for="nombre" class="labelsdp">Teléfono:</label><br>
-            <input type="text" id="number" name="number" class="inputsdp" required><br><br>
-        </div>
-    </div>
-    <div class="centrarboton"><button class="botonquierosumarme">Quiero sumarme! </button></div>
-        </form>
+    <section class="datospersonales" id="contacto">
+      <form id="contactForm" action="http://localhost:3000/send-email" method="POST">
+
+
+          <h1 class="h1datospers">Datos Personales</h1>
+          <div class="centrardatos">
+              <div class="inputylabelssdatosp">
+                  <label for="nombre" class="labelsdp">Nombre/s:</label><br>
+                  <input type="text" id="nombre" name="nombre" class="inputsdp" required><br><br>
+
+                  <label for="apellido" class="labelsdp">Apellido/s:</label><br>
+                  <input type="text" id="apellido" name="apellido" class="inputsdp" required><br><br>
+
+                  <label for="email" class="labelsdp">Email:</label><br>
+                  <input type="email" id="email" name="email" class="inputsdp" required><br><br>
+
+                  <label for="number" class="labelsdp">Teléfono:</label><br>
+                  <input type="text" id="number" name="number" class="inputsdp" required><br><br>
+
+                  <label for="mensaje" class="labelsdp">Mensaje:</label><br>
+                  <textarea id="mensaje" name="mensaje" class="inputsdp" required></textarea><br><br>
+              </div>
+          </div>
+          <div class="centrarboton">
+              <button type="submit" class="botonquierosumarme">Quiero sumarme!</button>
+          </div>
+      </form>
+  </section>
+
+
+    <section class="voluntario" id="voluntario">
+      <figure class="voluntario-figure">
+        <img src="/assets/images/caciques-actividades.jpg" alt="actividades caciques">
+      </figure>
     </section>
     <section class="porquecolaborar">
         <h1>
@@ -120,6 +137,7 @@
             <p>&copy; 2024 Rail. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="/script/main.js"></script>
 </body>
 </html>

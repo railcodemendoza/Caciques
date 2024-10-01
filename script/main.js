@@ -102,3 +102,32 @@ carousel.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 3; // El número multiplica la cantidad de desplazamiento
     carousel.scrollLeft = scrollLeft - walk;
 });
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = {
+      nombre: document.getElementById('nombre').value,
+      apellido: document.getElementById('apellido').value,
+      email: document.getElementById('email').value,
+      number: document.getElementById('number').value,
+      mensaje: document.getElementById('mensaje').value
+  };
+
+  fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+      alert(data.message);
+  })
+  .catch((error) => {
+      console.error('Error:', error);
+  });
+});

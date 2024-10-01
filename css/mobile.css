@@ -1557,3 +1557,17 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
       margin-top: 90px;
       margin: 40px;
   }
+.voluntario figure img{
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+}
+
+.voluntario-figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.voluntario{
+  margin: 20px 20px;
+}

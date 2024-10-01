@@ -1,14 +1,15 @@
 .menu-icon{
     display: none;
 }
-.navbar-links{
+.navbar-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     list-style: none;
-    margin: 0 20px;
+    margin: 1px 80px;
     color: #fff;
+    margin-right: 124px;
 }/* Objetivo*/
 /* .objetivo {
     display: flex;
@@ -78,14 +79,17 @@
 
 }
 .left-caciques img{
-    min-height: 170vh;
+    min-height: 101vh;
 }
 
 /* Metricas */
 .container-metricas {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Dos columnas de igual ancho */
-    gap: 140px; /* Espacio entre los elementos */
+    gap: 140px;
+    position: relative;
+    top: -7%;
+
 }
 .metricas{
     display: flex;
@@ -106,6 +110,12 @@
 #game {
   position: absolute;
   right: -40%;
-  
+
   top: 64%;
+}
+
+
+.container-video iframe {
+  width: 980px;
+  height: 500px;
 }

@@ -196,10 +196,9 @@
   top: 0;
 }
 
-.home img{
+.home img {
   width: 114px;
   height: 57px;
-  margin: -15px 37px;
 }
 .navbar-links{
   display: none;
@@ -1370,7 +1369,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 }
 
 
-          .headh1{
+            .headh1 {
               width: 240px;
               color: white;
               position: absolute;
@@ -1379,12 +1378,12 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center;
-              z-index: 999;
+              z-index: 2;
               font-family: "Oswald", sans-serif;
               font-optical-sizing: auto;
               font-weight: 400;
               font-style: normal;
-          }
+            }
 
 
               .form{

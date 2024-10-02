@@ -131,3 +131,72 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       console.error('Error:', error);
   });
 });
+
+// Función para enviar el correo
+// Función para enviar el correo
+function sendEmail(event) {
+  event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
+
+  let params = {
+      name: document.getElementById("name").value,
+      lastname: document.getElementById("lastname").value,
+      email: document.getElementById("email").value,
+      number: document.getElementById("number").value,
+      message: document.getElementById("mensaje").value,
+  };
+
+  // Simulando el envío de correo con EmailJS
+  emailjs.send("service_59kqwnd", "template_kqqz95h", params)
+      .then(function(response) {
+          // Mostrar el modal de éxito
+          openModal();
+          // Limpiar el formulario después de enviar el correo
+          document.getElementById("contactForm").reset();
+      })
+      .catch(function(error) {
+          alert("Error al enviar el email: " + error);
+      });
+}
+
+// Función para abrir el modal
+function sendEmail(event) {
+  event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
+
+  let params = {
+      name: document.getElementById("name").value,
+      lastname: document.getElementById("lastname").value,
+      email: document.getElementById("email").value,
+      number: document.getElementById("number").value,
+      message: document.getElementById("mensaje").value,
+  };
+
+  // Simulando el envío de correo con EmailJS
+  emailjs.send("service_59kqwnd", "template_kqqz95h", params)
+      .then(function(response) {
+          // Mostrar el modal de éxito
+          openModal();
+          // Limpiar el formulario después de enviar el correo
+          document.getElementById("contactForm").reset();
+      })
+      .catch(function(error) {
+          alert("Error al enviar el email: " + error);
+      });
+}
+
+// Función para abrir el modal
+function openModal() {
+  document.getElementById("successModal").style.display = "block";
+}
+
+// Función para cerrar el modal
+function closeModal() {
+  document.getElementById("successModal").style.display = "none";
+}
+
+// Cerrar el modal cuando se hace clic fuera de él (opcional)
+window.onclick = function(event) {
+  const modal = document.getElementById("successModal");
+  if (event.target === modal) {
+      closeModal();
+  }
+}

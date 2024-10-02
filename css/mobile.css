@@ -1596,3 +1596,42 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 .voluntario{
   margin: 20px 20px;
 }
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Mantener el modal en su lugar */
+  z-index: 1; /* Colocar el modal sobre el contenido */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  overflow: auto; /* Habilitar desplazamiento si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+}
+
+.close {
+  background-color: #A31010;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.close:hover {
+  background-color: #F7931E;
+  color: black;
+}

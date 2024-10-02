@@ -1618,7 +1618,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   position: relative;
 }
 
-.close {
+.close-form {
   background-color: #A31010;
   color: white;
   padding: 10px 20px;
@@ -1631,7 +1631,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   border-radius: 4px;
 }
 
-.close:hover {
+.close-form:hover {
   background-color: #F7931E;
   color: black;
 }

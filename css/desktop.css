@@ -171,6 +171,14 @@ header {
   margin-top: 50px;
 }
 
+.valores {
+  width: 100%;
+  height: 1048px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(29, 29, 27);
+}
+
 .listavalores {
   width: 50%;
   margin-left: 25%;
@@ -181,6 +189,15 @@ header {
   margin-top: 75px;
   font-size: 24px;
 }
+
+.ayudanos {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
 
 
 .hitos {

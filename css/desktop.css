@@ -174,8 +174,9 @@ header {
 
 .listavalores p {
   margin-top: 75px;
-  font-size: 40px;
+  font-size: 24px;
 }
+
 
 .hitos {
   height: 428px;
@@ -275,8 +276,9 @@ header {
   margin-top: 50px;
 }
 
-.home img{
-margin: -12px 69px;
+.home img {
+  margin: 1px 69px;
+  width: 50%;
 }
 @media screen and (min-width: 1440px) {
 .carousel-static{

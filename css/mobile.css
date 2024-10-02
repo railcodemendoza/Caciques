@@ -1316,8 +1316,15 @@ display: none;
 
 /* P  A  G  O  S */
 
-header{
+.headerpagos{
   height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/educaion.JPG);
+    height: 954px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .navcontainer {
   background-color: rgba(154, 154, 154, 0);
@@ -1613,6 +1620,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   height: 100%; /* Altura completa */
   overflow: auto; /* Habilitar desplazamiento si es necesario */
   background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+  margin-top: 60px;
 }
 
 .modal-content {

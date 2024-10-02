@@ -857,9 +857,10 @@ height: 59vh;
 }
 
 .footer__logo {
-  margin-top: 40px;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
+
 }
 
 .footer img {

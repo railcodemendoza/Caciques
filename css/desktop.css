@@ -23,6 +23,11 @@ flex: 0 0 33%;
  margin: 39px auto;
 }
 
+.title h4 {
+  margin: 10px auto;
+  font-size: 36px;
+}
+
 
 
 
@@ -166,6 +171,14 @@ header {
   margin-top: 50px;
 }
 
+.valores {
+  width: 100%;
+  height: 1048px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(29, 29, 27);
+}
+
 .listavalores {
   width: 50%;
   margin-left: 25%;
@@ -174,8 +187,18 @@ header {
 
 .listavalores p {
   margin-top: 75px;
-  font-size: 40px;
+  font-size: 24px;
 }
+
+.ayudanos {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+
 
 .hitos {
   height: 428px;
@@ -275,8 +298,9 @@ header {
   margin-top: 50px;
 }
 
-.home img{
-margin: -12px 69px;
+.home img {
+  margin: 1px 69px;
+  width: 50%;
 }
 @media screen and (min-width: 1440px) {
 .carousel-static{
@@ -305,3 +329,14 @@ width: 1080px;
 .modal-content {
   margin: 30% auto;
   }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}

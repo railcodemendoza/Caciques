@@ -294,9 +294,14 @@ margin: 139px auto;
 font-size: 1.3rem;
 }
 .left-caciques img {
-min-height: 200vh;
+min-height: 205vh;
 }
 
 .container-video iframe {
 width: 1080px;
 }
+
+
+.modal-content {
+  margin: 30% auto;
+  }

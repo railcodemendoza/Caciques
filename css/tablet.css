@@ -118,3 +118,8 @@ top: 64%;
 width: 980px;
 height: 500px;
 }
+
+
+.modal-content {
+  margin: 34% auto;
+  }

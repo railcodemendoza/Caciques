@@ -1635,3 +1635,13 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   background-color: #F7931E;
   color: black;
 }
+
+
+.footer a {
+  color: #ffffff; /* Cambia este valor al color que prefieras */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.footer a:hover {
+  color: #D51641; /* Cambia el color del enlace al pasar el mouse (opcional) */
+}

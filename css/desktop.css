@@ -125,6 +125,10 @@ header {
   justify-content: space-between;
 }
 
+.dondeestamos h1 {
+  text-align: center;
+}
+
 .ubicaciones {
   color: rgb(247, 147, 30);
   font-family: 'Oswald', sans-serif;
@@ -167,6 +171,11 @@ header {
   color: rgb(193, 39, 45);
 }
 
+.hitos{
+  text-align: center;
+
+}
+
 .lineadeltiempo {
   margin-top: 50px;
 }
@@ -177,6 +186,10 @@ header {
   overflow: hidden;
   position: relative;
   background-color: rgb(29, 29, 27);
+}
+
+.valores h1 {
+  text-align: center;
 }
 
 .listavalores {

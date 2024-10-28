@@ -52,10 +52,9 @@ header {
 .subrayado {
   background-color: var(--color-yellow-primary);
   font-weight: 500;
-  font-family: 'Sweet Sans Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: 2px;
   display: inline-block;
-  font-size: 40px;
 }
 
 .headh1 {
@@ -108,7 +107,6 @@ header {
   background-color: rgb(247, 147, 30);
   padding: 2px;
   display: inline-block;
-  font-size: 44px;
 }
 
 .dondeestamos {

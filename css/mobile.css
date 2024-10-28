@@ -278,7 +278,7 @@ display: none;
 .subrayado{
   background-color: var(--color-yellow-primary);
   font-weight: 500;
-  font-family: 'Sweet Sans Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
     padding: 2px;
   display: inline-block;
 }
@@ -1087,6 +1087,7 @@ display: none;
                   background-color: rgb(247, 147, 30);
                   padding: 2px;
                   display: inline-block;
+                  font-family: "Oswald", sans-serif;
           }
 
   .infoycarrousel{

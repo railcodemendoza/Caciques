@@ -56,7 +56,7 @@
 }
 
 .button:hover {
-  background-color: #a40f30; /* Efecto hover en el botón */
+  background-color: #d67106; /* Efecto hover en el botón */
 }
 
 
@@ -280,7 +280,7 @@ display: none;
 .subrayado{
   background-color: var(--color-yellow-primary);
   font-weight: 500;
-  font-family: 'Sweet Sans Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
     padding: 2px;
   display: inline-block;
 }
@@ -317,14 +317,12 @@ display: none;
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 .dona .button-dona{
-  color: #0E0E0D;
+  color: #000000;
 }
 /* Opcional: Estilo para el hover del botón */
 .button-dona:hover {
-  background-color: #a40f30; /* Efecto hover en el botón */
-
+  background-color: #d67106; /* Color de fondo en hover */
   transform: scale(1.05); /* Efecto de aumento en hover */
-  color: #0E0E0D;
 }
 
 
@@ -1091,6 +1089,7 @@ display: none;
                   background-color: rgb(247, 147, 30);
                   padding: 2px;
                   display: inline-block;
+                  font-family: "Oswald", sans-serif;
           }
 
   .infoycarrousel{
@@ -1135,7 +1134,7 @@ display: none;
                       display: flex;
                       width: auto;
                       height: 100%;
-                      animation: slide 21s infinite;
+                      animation: slide 40s infinite;
                   }
 
                   .carousel-item {
@@ -1668,7 +1667,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 }
 
 .close-form:hover {
-  background-color: #F7931E;
+  background-color: #d67106;
   color: black;
 }
 
@@ -1679,5 +1678,5 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 }
 
 .footer a:hover {
-  color: #D51641; /* Cambia el color del enlace al pasar el mouse (opcional) */
+  color: #d67106; /* Cambia el color del enlace al pasar el mouse (opcional) */
 }

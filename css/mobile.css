@@ -1143,7 +1143,7 @@ display: none;
                   }
 
                   .carousel-item img {
-                      width: 650px;
+                      width: 350px;
                       height: 300px;
                       object-fit: cover;
                       border-radius: 20px;

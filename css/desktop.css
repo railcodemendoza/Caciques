@@ -273,7 +273,7 @@ header {
 }
 
 .datospersonales {
-  height: 710px;
+  height: 754px;
 }
 
 .h1datospers {
@@ -357,4 +357,13 @@ width: 1080px;
 .footer img {
   height: 137px;
   margin-top: 2rem;
+}
+
+
+.voluntarios {
+  height: 200px;
+}
+.voluntario {
+  margin: 20px 20px;
+  height: 517px;
 }

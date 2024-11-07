@@ -122,7 +122,6 @@
 }
 
 .home img {
-  width: 114px;
   height: 57px;
   margin-left: 33px;
 }
@@ -726,7 +725,7 @@ height: 59vh;
 }
 
 .footer img {
-  height: 137px;
+  height: 96px;
 }
 
 .footer__addr {
@@ -782,7 +781,7 @@ height: 59vh;
 }
 
 .footer__nav h5 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: white;
   margin: 0;
 }
@@ -1174,10 +1173,11 @@ display: none;
 /* P  A  G  O  S */
 
 .voluntarios {
-  height: 556px;
+
   text-align: center;
   color: rgb(220, 219, 219);
-  font-size: 24px;
+  font-size: 20px;
+  padding: 5px;
 }
 .voluntarios p{
   margin-top: 1rem;

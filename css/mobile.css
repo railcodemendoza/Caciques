@@ -725,7 +725,7 @@ height: 59vh;
 }
 
 .footer img {
-  height: 96px;
+  height: 66px;
 }
 
 .footer__addr {
@@ -869,7 +869,7 @@ body{
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/card1.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/CCQS060\ \(1\).JPG);
   height: 954px;
   overflow: hidden;
   background-size: cover;
@@ -1176,7 +1176,7 @@ display: none;
 
   text-align: center;
   color: rgb(220, 219, 219);
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px;
 }
 .voluntarios p{
@@ -1401,6 +1401,10 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
       background-position: center;
       background-repeat: no-repeat;
       height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   .porquecolaborar h1 {
@@ -1467,6 +1471,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   width: 100%;
   display: flex;
   border-radius: 20px;
+  margin: 20px;
 }
 
 .voluntario-figure{
@@ -1525,4 +1530,9 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 
 .footer a:hover {
   color: #d67106; /* Cambia el color del enlace al pasar el mouse (opcional) */
+}
+
+
+.title-voluntarios{
+  margin-top: 18px;
 }

@@ -105,3 +105,7 @@ height: 500px;
 .voluntarios p{
   padding: 10px 80px;
 }
+.cards-voluntarios{
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+}

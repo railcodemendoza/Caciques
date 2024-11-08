@@ -1549,7 +1549,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   display: grid;
   grid-auto-flow: column;
   gap: 2.2rem;
-  grid-auto-columns: 80%; /* Each card takes up 80% of the viewport width */
+  grid-auto-columns: 16%; /* Each card takes up 80% of the viewport width */
 }
 
 .card {
@@ -1560,6 +1560,6 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   align-items: center;
 }
 .card figure img{
-  width: 500px;
-  height: 750px;
+  width: 331px;
+  height: 444px;
 }

@@ -109,3 +109,9 @@ height: 500px;
   grid-template-columns: 2fr 1fr;
   display: grid;
 }
+.container-cards-voluntarios {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.2rem;
+  grid-auto-columns: 12%;
+}

@@ -200,3 +200,45 @@ window.onclick = function(event) {
       closeModal();
   }
 }
+
+
+
+
+const carousell = document.querySelector('.container-cards-voluntarios');
+
+carousell.addEventListener('mousedown', (e) => {
+  isDown = true;
+  carousell.classList.add('active');
+  startX = e.pageX - carousel.offsetLeft;
+  scrollLeft = carousel.scrollLeft;
+});
+
+carousell.addEventListener('mouseleave', () => {
+  isDown = false;
+  carousell.classList.remove('active');
+});
+
+carousel.addEventListener('mouseup', () => {
+  isDown = false;
+  carousell.classList.remove('active');
+});
+
+carousell.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - carousel.offsetLeft;
+  const walk = (x - startX) * 2; // Ajusta la velocidad del scroll
+  carousell.scrollLeft = scrollLeft - walk;
+});
+
+// Habilitar desplazamiento táctil
+carousell.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].pageX;
+  scrollLeft = carousel.scrollLeft;
+}, { passive: true });
+
+carousell.addEventListener('touchmove', (e) => {
+  const x = e.touches[0].pageX;
+  const walk = (x - startX) * 2;
+  carousel.scrollLeft = scrollLeft - walk;
+}, { passive: true });

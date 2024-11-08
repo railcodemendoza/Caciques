@@ -288,7 +288,7 @@ header {
 }
 
 .porquecolaborar {
-  height: 420px;
+ height: 100vh;
 }
 
 .porquecolaborar h1 {
@@ -360,11 +360,10 @@ width: 1080px;
   margin-top: 2rem;
 }
 
-
-.voluntarios {
-  height: 200px;
-}
 .voluntario {
   margin: 20px 20px;
   height: 517px;
+}
+.voluntarios p{
+  font-size: 24px;
 }

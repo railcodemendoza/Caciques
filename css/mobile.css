@@ -463,7 +463,7 @@ display: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  top: 22%;
+  top: 10%;
   position: relative;
 }
 .uno, .dos, .tres, .cuatro .cinco{
@@ -1567,5 +1567,5 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 .voluntarios-paragraph{
   margin: 19px;
   line-height: 30px;
- 
+
 }

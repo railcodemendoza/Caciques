@@ -113,5 +113,5 @@ height: 500px;
   display: grid;
   grid-auto-flow: column;
   gap: 2.2rem;
-  grid-auto-columns: 12%;
+  grid-auto-columns: 17%; /* Each card takes up 80% of the viewport width */
 }

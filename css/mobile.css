@@ -1575,3 +1575,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   color: white;
   margin: 15px auto;
 }
+.title-trabajo{
+  background-color: #f9f3f3a6;
+  border-radius: 20px;
+}

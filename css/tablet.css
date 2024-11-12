@@ -7,7 +7,7 @@
   align-items: center;
   gap: 20px;
   list-style: none;
-  margin: 1px 76px;
+  margin: 1px 61px;
   color: #fff;
 }
 .container-objetivo {
@@ -115,3 +115,4 @@ height: 500px;
   gap: 2.2rem;
   grid-auto-columns: 17%; /* Each card takes up 80% of the viewport width */
 }
+

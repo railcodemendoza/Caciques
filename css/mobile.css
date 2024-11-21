@@ -1187,7 +1187,7 @@ display: none;
 }
 
 .header-voluntarios{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/CMalta259.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/header-voluntario.svg);
   height: 954px;
   overflow: hidden;
   background-size: cover;

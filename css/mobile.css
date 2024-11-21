@@ -1457,7 +1457,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
         margin: 40px;
     }
     .porquecolaborar h1 {
-      margin-top: 100px;
+      margin-top: 18px;
       font-family: 'Sweet Sans Pro', sans-serif;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -1582,7 +1582,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   background-color: #f9f3f3a6;
   border-radius: 20px;
 }
-#contactForm{
+.contactForm{
   display: flex;
   flex-direction: column;
   justify-content: center;

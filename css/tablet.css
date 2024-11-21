@@ -116,3 +116,6 @@ height: 500px;
   grid-auto-columns: 17%; /* Each card takes up 80% of the viewport width */
 }
 
+.h1datospers {
+  white-space: nowrap;
+}

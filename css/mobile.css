@@ -676,7 +676,7 @@ font-family: 'Oswald', sans-serif;
 
 .parallax {
 height: 59vh;
-  background-image: url('/assets/images/prallax.JPG');
+  background-image: url('/assets/images/parallax.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -871,7 +871,7 @@ body{
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/CCQS060\ \(1\).JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/header-nosotros.svg');
   height: 954px;
   overflow: hidden;
   background-size: cover;
@@ -1411,7 +1411,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   }
 
   .porquecolaborar h1 {
-      margin-top: 40px;
+      margin-top: 110px;
       font-family: 'Sweet Sans Pro', sans-serif;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -1426,7 +1426,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
       font-style: normal;
       font-size: 12px;
       margin-top: 90px;
-      margin: 40px;
+      margin: 20px;
   }
 .voluntario figure img{
   width: 100%;
@@ -1466,7 +1466,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
       font-optical-sizing: auto;
       font-weight: 300;
       font-style: normal;
-      font-size: 12px;
+      font-size: 16px;
       margin-top: 90px;
       margin: 40px;
   }
@@ -1578,4 +1578,10 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 .title-trabajo{
   background-color: #f9f3f3a6;
   border-radius: 20px;
+}
+#contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

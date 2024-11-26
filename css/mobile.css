@@ -1179,7 +1179,7 @@ display: none;
   text-align: center;
   color: rgb(220, 219, 219);
   font-size: 1rem;
-  padding: 5px;
+  padding: 15px;
 }
 .voluntarios p{
   margin-top: 1rem;
@@ -1470,7 +1470,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
       font-optical-sizing: auto;
       font-weight: 300;
       font-style: normal;
-      font-size: 12px;
+      font-size: 16px;
       margin: 25px;
   }
 .voluntario figure img{
@@ -1587,4 +1587,7 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.pharagraph{
+  padding: 29px;
 }

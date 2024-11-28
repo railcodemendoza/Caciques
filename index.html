@@ -26,15 +26,19 @@
 
     <meta name="author" content="Rail | Los Caciques Rugby Mendoza" />
     <script>
-      // Verificar si el dispositivo es webOS, iPhone, iPad o iPod
-      if (/webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        // Agregar la hoja de estilos específica para estos dispositivos
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'css/styles-ios-webos.css';
-        document.head.appendChild(link);
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          // Cargar una hoja de estilos específica para iPhone
+          console.log('es iPhone');
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = '/css/iphone.css'; // Cambia esta ruta a donde tengas tu archivo CSS específico para iPhone
+          document.head.appendChild(link);
+      } else {
+          // No hacer nada si es cualquier otro dispositivo
+          console.log('es Web');
       }
-    </script>
+  </script>
+
 
 </head>
 <body>
@@ -90,12 +94,12 @@
     </section>
     <section class="caciques" id="involucrate">
         <div class="container-caciques">
-            <div class="left-caciques">
+            <div class="left-caciques" id="involucrate">
                 <figure>
                     <img src="/assets/images/abrazo.JPG" alt="caciques">
                 </figure>
             </div>
-            <div class="right-caciques" id="involucrate">
+            <div class="right-caciques">
                 <div class="titulo-caciques">
                     <h2><div class="subrayado-caciques">SUMATE AL EQUIPO</div></h2><br>
                     <p>Cada aporte cuenta.</p>

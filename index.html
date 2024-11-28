@@ -26,22 +26,19 @@
 
     <meta name="author" content="Rail | Los Caciques Rugby Mendoza" />
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    <script>
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-                if (/iPhone|iPad|iPod/i.test(userAgent)) {
-                    console.log('es iPhone');
-                    window.location.href = '/index-iphone.html';
-                } else if (/Android/i.test(userAgent)) {
-                    console.log('es Android');
-                    window.location.href = '/index.html';
-                } else {
-                    console.log('es Web');
-                }
-            });
-        </script>
-
+      if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          console.log('es iPhone');
+          window.location.href = '/index-iphone.html';
+      } else if (/Android/i.test(userAgent)) {
+          console.log('es Android');
+          window.location.href = '/index.html';
+      } else {
+          console.log('es Web');
+      }
+  </script>
 
   </head>
 

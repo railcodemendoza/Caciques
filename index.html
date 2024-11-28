@@ -25,6 +25,16 @@
     <meta name="twitter:image" content="https://sitio-del-proyecto.com/assets/images/logoblancomza.png" />
 
     <meta name="author" content="Rail | Los Caciques Rugby Mendoza" />
+    <script>
+      // Verificar si el dispositivo es webOS, iPhone, iPad o iPod
+      if (/webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        // Agregar la hoja de estilos específica para estos dispositivos
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'styles-ios-webos.css'; 
+        document.head.appendChild(link);
+      }
+    </script>
 
 </head>
 <body>

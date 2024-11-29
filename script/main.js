@@ -242,3 +242,19 @@ carousell.addEventListener('touchmove', (e) => {
   const walk = (x - startX) * 2;
   carousel.scrollLeft = scrollLeft - walk;
 }, { passive: true });
+
+
+
+/* Parallax*/
+document.addEventListener("DOMContentLoaded", function () {
+  const parallaxSection = document.querySelector(".parallax-iphone img");
+
+  window.addEventListener("scroll", function () {
+    // Calcula el desplazamiento y ajusta el efecto
+    let offset = window.scrollY * 0.5; // Ajusta el factor para cambiar la velocidad del parallax
+    if (window.innerWidth <= 480) {
+      // Solo aplica el efecto si es una pantalla de tamaño pequeño (iPhone)
+      parallaxSection.style.transform = `translateY(${offset}px)`;
+    }
+  });
+});

@@ -1592,3 +1592,10 @@ box-shadow: 0 2px 14px rgba(0, 0, 0, 0.555); /* Ajusta la sombra si es necesario
 .pharagraph{
   padding: 29px;
 }
+/* @media only screen and (max-width: 480px) {
+  .parallax-iphone {
+    background-size: 100% auto;
+    background-position: center top;
+  }
+}
+ */
